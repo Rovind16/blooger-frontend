@@ -1,0 +1,130 @@
+.navbar {
+  background-color:#0e9577;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo-img{
+  width: 100px;
+  height: 70px;
+  border-radius: 15%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #3c3737;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-auth .auth-button {
+  background-color: #1B9C85;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 20px;
+}
+
+.navbar-auth .auth-button:hover {
+  background-color: #e65c00;
+}
+
+.navbar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navbar-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+.navbar-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+
+  .navbar-links,
+  .navbar-auth {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1B9C85;
+    padding: 10px 0;
+  }
+
+  .navbar-links.mobile-open,
+  .navbar-auth.mobile-open,
+  .navbar-img.mobile-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-link,
+  .auth-button
+   {
+    margin: 10px 0;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu-toggle.mobile-open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-menu-toggle.mobile-open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.mobile-open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

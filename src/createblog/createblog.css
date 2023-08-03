@@ -1,0 +1,115 @@
+.blogupload-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blogupload-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:#0e9577;
+  }
+  
+  .blogupload-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blogupload-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .blogupload-label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color:#0e9577;
+  }
+  
+  .blogupload-input,
+  .blogupload-textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .blogupload-textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .blogupload-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1B9C85;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blogupload-button:hover {
+    background-color: #2a866d;
+  }
+  
+  .blogupload-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .blogupload-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .blogupload-file-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  
+  
+  .blogupload-file-input::-webkit-file-upload-button:hover {
+    background-color:#0e9577;
+  }
+  
+  .blogupload-file-input::before {
+    content: 'Select Image  ';
+  }
+  
+  
+  
+  .blogupload-file-input:active::before {
+    content: 'Uploading...';
+  }
+  
+  .blogupload-file-input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  .category {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .category input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .category label {
+    color:#0e9577;
+  }
+
+  

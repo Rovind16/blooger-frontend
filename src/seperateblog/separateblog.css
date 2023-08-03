@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+.cnt{
+  text-align: center;
+  color: #0e9577;
+}
+.separate-blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adjusted to center content */
+  margin: 20px;
+}
+
+.separate-blog-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; /* Adjusted maximum width for better responsiveness */
+  margin-bottom: 20px; /* Added margin between blog items */
+}
+.separate-blog-content{
+  white-space: pre-wrap;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.separate-blog-image-container {
+  width: 100%;
+  max-width: 30%; /* Increased max-width for better image display */
+}
+
+.separate-blog-image {
+  width: 100%;
+  height: auto; /* Removed fixed height to maintain aspect ratio */
+  object-fit: cover;
+}
+
+.separate-blog-content-container {
+  width: 70%; /* Adjusted width for better responsiveness */
+  padding: 20px; /* Reduced padding for better content display */
+}
+
+.separate-social-media-sharing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.separate-comment-section {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.separate-comment-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.separate-post-button {
+  padding: 8px 16px; /* Increased padding for a better button appearance */
+  background-color: #0e9577;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.separate-comments-section {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.separate-blog-label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+  .separate-blog-container {
+    margin: 10px; /* Adjusted margin for better spacing */
+  }
+
+  .separate-blog-content-container {
+    padding: 20px; /* Reduced padding for better content display */
+  }
+}
+
+@media (max-width: 768px) {
+  .separate-blog-container {
+    margin: 5px; /* Adjusted margin for better spacing */
+  }
+
+  .separate-blog-item {
+    flex-direction: column; /* Adjusted to stack items vertically on smaller screens */
+  }
+
+  .separate-blog-image-container {
+    max-width: 100%;
+  }
+
+  .separate-blog-content-container {
+    padding: 10px; 
+  }
+}
+.separate-blog-label{
+  color: #0e9577;
+}
