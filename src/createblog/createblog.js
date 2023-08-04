@@ -60,7 +60,7 @@ const BlogUpload = () => {
     const currentDate = new Date(); 
     const formattedDateTime = currentDate.toLocaleString(); 
 
-    fetch('http://localhost:5000/upload-blog', {
+    fetch('https://blogvista-backend.onrender.com/upload-blog', {
       method: 'POST',
       crossDomain: true,
       headers: {
