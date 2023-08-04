@@ -27,7 +27,7 @@ const SignUpForm = () => {
     }
 
     console.log(name);
-    fetch("http://localhost:5000/register", {
+    fetch("https://blogvista-backend.onrender.com/register", {
       method: "POST",
       crossDomain: true,
       headers: {
