@@ -15,7 +15,7 @@ const ProfilePage = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true); 
   const deleteblog = () => {
-    fetch('http://localhost:5000/get-blog', {
+    fetch('https://blogvista-backend.onrender.com/get-blog', {
       method: 'GET',
     })
       .then((res) => res.json())
