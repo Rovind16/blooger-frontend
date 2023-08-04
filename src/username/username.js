@@ -5,7 +5,7 @@ function Name() {
   const [fname,setfname] = useState("");
   var x = localStorage.getItem("login");
   if(x==="true"){
-  fetch("http://localhost:5000/username", {
+  fetch("https://blogvista-backend.onrender.com/username", {
     method: "POST",
     crossDomain: true,
     headers: {
