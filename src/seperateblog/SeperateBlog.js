@@ -13,7 +13,7 @@ const SeperateBlog = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/seperateblog/${id}`)
+    fetch(`https://blogvista-backend.onrender.com/seperateblog/${id}`)
       .then(res => res.json())
       .then(data => {
         setBlog(data.data[0]);
