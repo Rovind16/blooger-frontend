@@ -16,7 +16,7 @@ const Home = () => {
   const [darkMode, setDarkMode] = useState(false); // State for Dark Mode
 
   useEffect(() => {
-    fetch('http://localhost:5000/get-blog', {
+    fetch('https://blogvista-backend.onrender.com/get-blog', {
       method: 'GET',
     })
       .then((res) => res.json())
