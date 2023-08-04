@@ -45,7 +45,7 @@ const ProfilePage = () => {
   const handleRemoveBlog = (email, title, content) => {
     setIsLoading(true); 
     console.log(email);
-    fetch("http://localhost:5000/remove-blog", {
+    fetch("https://blogvista-backend.onrender.com/remove-blog", {
       method: "POST",
       crossDomain: true,
       headers: {
