@@ -23,7 +23,7 @@ const SeperateBlog = () => {
   }, [id]);
 
   const handleComment = (e, blogtitle) => {
-    fetch('http://localhost:5000/comment', {
+    fetch('https://blogvista-backend.onrender.com/comment', {
       method: 'POST',
       crossDomain: true,
       headers: {
