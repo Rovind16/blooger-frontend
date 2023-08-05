@@ -102,10 +102,14 @@ const Home = () => {
           })}
         </select>
       </div>
-      {token && (
+     {token && (
+        <>
         <Link to="/createblog">
           <button className="home-button">Create Blog</button>
         </Link>
+
+         <Link to="/game"> <button className="home-button">Blog game</button>
+         </Link></>
       )}
       {!token && <h4>Sign in to create a blog!</h4>}
       <div className="srch">
