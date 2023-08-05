@@ -10,6 +10,7 @@ import FirstPage from './firstpage/firstpage';
 import BlogUpload from './createblog/createblog';
 import ProfilePage from './profiledata/profiledata';
 import SeperateBlog from './seperateblog/SeperateBlog';
+import WordSearchGame from './game/game';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
       <Route path='/createblog' element={<BlogUpload/>}/>
       <Route path='/profile' element={<ProfilePage/>}/>
       <Route path='/seperateBlog/:id' element={<SeperateBlog/>}/>
-      
+      <Route path='/game' element={<WordSearchGame/>}/>
      
     </Routes>
     </BrowserRouter>
