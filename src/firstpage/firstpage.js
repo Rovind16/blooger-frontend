@@ -2,7 +2,7 @@ import image from '../images/blog.jpg';
 import React from 'react';
 import './firstpage.css';
 import {Link} from 'react-router-dom';
-
+import vid from './rr.mp4';
 
 const FirstPage = () => {
   return (
@@ -18,7 +18,10 @@ const FirstPage = () => {
         </Link>
       </div>
       <div className="firstpage-image-container">
-        <img className="firstpage-image" src={image} alt="Website Image" />
+      <video className ="firstpage-image" src={vid} autoPlay loop muted>
+        Your browser does not support the video tag.
+</video>
+
       </div>
     </div>
   );
