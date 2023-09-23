@@ -20,7 +20,7 @@ const FirstPage = () => {
       <div className="firstpage-image-container">
       <video className ="firstpage-image" src={vid} autoPlay loop muted>
         Your browser does not support the video tag.
-</video>
+      </video>
 
       </div>
     </div>
